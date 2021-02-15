@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_paomedia_small_n_flat_house" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="Créer un compte "
+        android:textColor="@color/colorCardView"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorCardView"
+        android:drawableStart="@drawable/username"
+        android:drawableLeft="@drawable/username"
+        android:hint="Nom d'utilisateur:"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorCardView"
+        android:drawableStart="@drawable/email"
+        android:drawableLeft="@drawable/email"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorCardView"
+        android:drawableStart="@drawable/password"
+        android:drawableLeft="@drawable/password"
+        android:hint="Mot e passe"
+        android:inputType="textPassword"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorCardView"
+        android:drawableStart="@drawable/password"
+        android:drawableLeft="@drawable/password"
+        android:hint="confirmer le mot e passe"
+        android:inputType="textPassword"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinnerRoles"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorCardView"
+        android:entries="@array/roles"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="20sp"></Spinner>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@color/a"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textColor="@color/colorCardView"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="j'ai_déjà_un_compte"
+            android:textColor="@color/colorCardView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="inscrivez-vous ici"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
