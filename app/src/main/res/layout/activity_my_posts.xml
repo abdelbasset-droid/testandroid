@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="My Posts"
+        android:text="mes publications"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         android:textStyle="bold" />
